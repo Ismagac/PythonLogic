@@ -1,18 +1,15 @@
 from typing import List
 
 class TrieNode:
-    """Nodo de Trie que almacena palabras en sus hijos."""
     def __init__(self):
         self.children = {} 
         self.word = None 
 
 class Trie:
-    """Estructura Trie para almacenar palabras."""
     def __init__(self):
         self.root = TrieNode()  
 
     def insert(self, word: str):
-        """Inserta una palabra en el Trie."""
         node = self.root  
         for char in word:
             if char not in node.children:
@@ -22,7 +19,6 @@ class Trie:
 
 class Solution:
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
-        """Encuentra todas las palabras en `words` que pueden formarse en el tablero."""
         trie = Trie() 
         for word in words:
             trie.insert(word)  
@@ -31,7 +27,6 @@ class Solution:
         result = []  
 
         def dfs(r, c, node):
-            """Búsqueda DFS que explora el Trie y el tablero simultáneamente."""
             char = board[r][c] 
             if char not in node.children:
                 return
