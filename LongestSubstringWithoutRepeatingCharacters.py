@@ -25,4 +25,24 @@ class TestLongestSubstring(unittest.TestCase):
         self.assertEqual(length_of_longest_substring("dvdf"), 3)
 
 if __name__ == "__main__":
-    unittest.main()
+    # unittest.main()
+    test_cases = [
+        "abcabcbb",
+        "bbbbb",
+        "pwwkew",
+        "",
+        "abcdef",
+        "abba",
+        "dvdf",
+        "anviaj",
+        "tmmzuxt"
+    ]
+    
+    print("Testing length_of_longest_substring with various inputs:")
+    print("-" * 50)
+    
+    for test_str in test_cases:
+        result = length_of_longest_substring(test_str)
+        print(f"Input: '{test_str}'")
+        print(f"Longest substring without repeating characters: {result}")
+        print("-" * 50)
