@@ -25,3 +25,4 @@ print(solution.isMatch("aa", "a"))    # False
 print(solution.isMatch("aa", "a*"))   # True
 print(solution.isMatch("ab", ".*"))   # True
 print(solution.isMatch("aab", "c*a*b")) # True
+print(solution.isMatch("mississippi", "mis*is*p*.")) # False
