@@ -32,16 +32,4 @@ if __name__ == "__main__":
     result2 = sol.shortestPalindrome(test2)
     print(f"Input: '{test2}' → Output: '{result2}'")
     
-    test3 = "race"
-    result3 = sol.shortestPalindrome(test3)
-    print(f"Input: '{test3}' → Output: '{result3}'")
-    
-    test4 = "aba"
-    result4 = sol.shortestPalindrome(test4)
-    print(f"Input: '{test4}' → Output: '{result4}'")
-    
-    test5 = ""
-    result5 = sol.shortestPalindrome(test5)
-    print(f"Input: '{test5}' → Output: '{result5}'")
-
 
